@@ -1,0 +1,20 @@
+ul,
+li {
+  list-style: none;
+}
+
+button {
+  color: white;
+  font-weight: bold;
+  background-color: red;
+  margin-right: 0.5rem;
+  border-radius: 20%;
+  border: 0;
+  width: 30px;
+  height: 25px;
+  margin-top: 0.25rem;
+}
+
+.clickable {
+  cursor: pointer;
+}
