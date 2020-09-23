@@ -23,21 +23,50 @@
       media="screen,projection"
     />
 
-    <title>Calculadora</title>
+    <title>Pratica 01</title>
   </head>
   <body>
     <nav>
       <div class="nav-wrapper">
-        <a href="#" class="brand-logo ml-2">Calculadora</a>
+        <a href="#" class="brand-logo ml-2">Prática 01</a>
       </div>
     </nav>
-    <div class="ml-2">
+    <div class="container">
       <!-- Page Content goes here -->
-      <h3>Calculadora</h3>
+      <h3 class="center-align">Super Calculadora</h3>
+
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="ainput" type="number" min="0" class="validate" />
+          <label for="ainput">Valor de A</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="binput" type="number" min="0" class="validate" />
+          <label for="binput">Valor de B</label>
+        </div>
+      </div>
+      <h4 class="center-align">Resultados</h4>
+
+      <div id="calculos">
+        <div class="row">
+          <div class="col s4">
+            <label>Soma (A + B)</label>
+            <input id="rsoma" type="text" readonly />
+          </div>
+          <div class="col s4">
+            <label>Subtração (A – B)</label>
+            <input id="rsubtracaoa" type="text" readonly />
+          </div>
+          <div class="col s4">
+            <label>Subtração (B – A)</label>
+            <input id="rsubtracaob" type="text" readonly />
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- scripts -->
-    <script src="./js/script.js"></script>
+    <script defer src="./js/script.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   </body>
