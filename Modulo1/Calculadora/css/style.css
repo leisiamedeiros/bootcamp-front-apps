@@ -6,6 +6,10 @@
   margin-left: 0.25rem;
 }
 
+.mt-2 {
+  margin-top: 2rem;
+}
+
 .text-uppercase {
   text-transform: uppercase;
 }

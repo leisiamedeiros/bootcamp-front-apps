@@ -6,7 +6,6 @@ function start() {
   inputB = document.querySelector("#binput");
 
   startInputs();
-  render();
 }
 
 function startInputs() {
@@ -22,6 +21,15 @@ function calculate() {
     soma(parsedA, parsedB);
     subtracaoA(parsedA, parsedB);
     subtracaoB(parsedB, parsedA);
+    multiplicacao(parsedA, parsedB);
+    divisaoA(parsedA, parsedB);
+    divisaoB(parsedB, parsedA);
+    quadradoA(parsedA);
+    quadradoB(parsedB);
+    divisoresA(parsedA);
+    divisoresB(parsedB);
+    fatorialA(parsedA);
+    fatorialB(parsedB);
   }
 }
 
@@ -40,10 +48,83 @@ function subtracaoB(b, a) {
   result.value = b - a;
 }
 
-function formatNumber(value) {
-  return new Intl.NumberFormat("pt-BR").format(value);
+function multiplicacao(a, b) {
+  var result = document.querySelector("#rmultiplica");
+  result.value = a * b;
 }
 
-function render() {}
+function divisaoA(a, b) {
+  var result = document.querySelector("#rdividea");
+  result.value = b === 0 ? "Divisão por 0" : (a / b).toFixed(2);
+}
+
+function divisaoB(b, a) {
+  var result = document.querySelector("#rdivideb");
+  result.value = a === 0 ? "Divisão por 0" : (b / a).toFixed(2);
+}
+
+function quadradoA(a) {
+  var result = document.querySelector("#rqua");
+  result.value = a ** 2;
+}
+
+function quadradoB(b) {
+  var result = document.querySelector("#rqub");
+  result.value = b ** 2;
+}
+
+function divisoresA(a) {
+  let divisores = [];
+  for (let i = 1; i <= a; i++) {
+    if (a % i == 0) {
+      divisores.push(i);
+    }
+  }
+
+  var result = document.querySelector("#divisoresa");
+  result.value = divisores.join() + " (" + divisores.length + ")";
+}
+
+function divisoresB(b) {
+  let divisores = [];
+  for (let i = 1; i <= b; i++) {
+    if (b % i == 0) {
+      divisores.push(i);
+    }
+  }
+
+  var result = document.querySelector("#divisoresb");
+  result.value = divisores.join() + " (" + divisores.length + ")";
+}
+
+function fatorialA(a) {
+  var result = document.querySelector("#fatoriala");
+  if (a > 21) {
+    result.value = "Número muito grande";
+  } else {
+    var fatorial = 1;
+    for (let i = a; i > 1; i--) {
+      fatorial *= i;
+    }
+    result.value = formatNumber(fatorial);
+  }
+}
+
+function fatorialB(b) {
+  var result = document.querySelector("#fatorialb");
+  if (b > 21) {
+    result.value = "Número muito grande";
+  } else {
+    var fatorial = 1;
+    for (let i = b; i > 1; i--) {
+      fatorial *= i;
+    }
+    result.value = formatNumber(fatorial);
+  }
+}
+
+function formatNumber(number) {
+  return new Intl.NumberFormat("pt-BR").format(number);
+}
 
 start();
