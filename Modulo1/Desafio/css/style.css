@@ -10,16 +10,8 @@
   margin-top: 2rem;
 }
 
-.mb-7 {
-  margin-bottom: 7rem;
-}
-
 .text-uppercase {
   text-transform: uppercase;
-}
-
-.container-w80 {
-  width: 80% !important;
 }
 
 .footer {
@@ -27,9 +19,4 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #ee6e73;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  color: white;
-  text-align: center;
 }
