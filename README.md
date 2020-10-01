@@ -4,11 +4,11 @@ Nesse repositorio se encontra os projetos desenvolvidos durante o [Bootcamp Dese
 
 # Apresentação das aplicações
 
-- Super Calculadora
+- [Super Calculadora](#preview-super-calculadora)
   - _Inserir Descrição_
-- Desafio Modulo 1 (Buscar Devs)
+- [Desafio Modulo 1 (Buscar Devs)](#preview-buscar-devs)
   - _Inserir Descrição_
-- Lista de Países e favoritos
+- [Lista de Países e favoritos](#preview-lista-de-paises-e-favoritos)
   - _Inserir Descrição_
 
 ## Preview Super Calculadora
@@ -19,6 +19,4 @@ Nesse repositorio se encontra os projetos desenvolvidos durante o [Bootcamp Dese
 
 ![BuscarDevs](./Files/BuscarDevs.gif)
 
-## Preview Lista de Países e Favoritos
-
-![PaisesFavoritos](./Files/example.gif)
+## Preview Lista de Paises e Favoritos
