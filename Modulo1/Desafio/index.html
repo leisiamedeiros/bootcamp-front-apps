@@ -28,30 +28,47 @@
   <body>
     <nav>
       <div class="nav-wrapper">
-        <a href="#" class="brand-logo ml-2">ToDo</a>
+        <a href="#" class="brand-logo ml-2">Desafio M01</a>
       </div>
     </nav>
     <!-- EndNav -->
-    <div class="container">
+    <div class="container mb-7">
       <!-- Page Content goes here -->
-      <h4 class="center-align">ToDo</h4>
+      <h4 class="center-align mr-4">Buscar Devs</h4>
+
+      <input type="text" id="search" />
+
+      <!-- CheckBoxes -->
+      <label class="mr-2 ml-1">
+        <input type="checkbox" id="checkjava" name="Java" checked />
+        <span>Java</span>
+      </label>
+      <label class="mr-2">
+        <input type="checkbox" id="checkjs" name="JavaScript" checked />
+        <span>JavaScript</span>
+      </label>
+      <label class="mr-2">
+        <input type="checkbox" id="checkpython" name="Python" checked />
+        <span>Python</span>
+      </label>
+
+      <!-- Radios -->
+      <label class="ml-2">
+        <input name="andOr" type="radio" id="radioAnd" value="and" />
+        <span>AND</span>
+      </label>
+      <label class="ml-1">
+        <input name="andOr" type="radio" id="radioOr" value="or" checked />
+        <span>OR</span>
+      </label>
+
+      <h5 class="mt-2 ml-1"><span id="qtdDevs"></span> dev(s) encontrado(s)</h5>
+      <div class="row">
+        <div class="col s12" id="devs"></div>
+      </div>
     </div>
     <!-- EndContainer -->
-    <footer class="page-footer footer mt-2">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">Modulo 1 - Desafio</h5>
-            <p class="grey-text text-lighten-4">
-              Desafio prático de JavaScript do módulo 01
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="footer-copyright">
-        <div class="container">© 2020</div>
-      </div>
-    </footer>
+    <footer class="footer">Modulo 1 - Desafio © 2020</footer>
     <!-- EndFooter -->
     <!-- scripts -->
     <script defer src="./js/script.js"></script>

@@ -2,16 +2,32 @@
   margin-left: 2rem;
 }
 
+.mr-2 {
+  margin-right: 2rem;
+}
+
+.mr-4 {
+  margin-right: 4rem;
+}
+
 .ml-1 {
-  margin-left: 0.25rem;
+  margin-left: 1rem;
 }
 
 .mt-2 {
   margin-top: 2rem;
 }
 
+.mb-7 {
+  margin-bottom: 7rem;
+}
+
 .text-uppercase {
   text-transform: uppercase;
+}
+
+.container-w80 {
+  width: 80% !important;
 }
 
 .footer {
@@ -19,4 +35,41 @@
   left: 0;
   bottom: 0;
   width: 100%;
+  background-color: #ee6e73;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: white;
+  text-align: center;
+}
+
+.card-dev {
+  width: 30%;
+  float: left;
+  border: 0.1rem solid lightgrey;
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+}
+
+img {
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin-right: 0.5rem;
+}
+
+.img-face-dev {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+.card-dev span {
+  display: block;
+}
+
+#search {
+  width: 90%;
+  display: block;
+  margin-left: 1rem;
 }
